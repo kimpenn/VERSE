@@ -1,0 +1,5 @@
+gene	count
+test_sine1	0
+test_line1	0
+test_sine2	0
+test_line2	0

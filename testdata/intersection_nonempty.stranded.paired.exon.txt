@@ -1,0 +1,7 @@
+gene	count
+test_gene1	1
+test_gene2	0
+test_gene3	4
+test_gene4	5
+test_gene5	0
+test_gene6	0

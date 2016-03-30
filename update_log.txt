@@ -1,0 +1,5 @@
+6/30/2015	Bug Fixed	Only one read in a chunk situation.
+7/14/2015	Bug Fixed	Fixed crash cases where there are no unprocessed reads but thread was initiated; fixed merging of WASH6P. 
+		New Feature 	--nonemptyModified
+9/10/2015	Bug Fixed	Corrected counting for Non-unique mapped reads.
+		New Feature	—-multithreadDecompress 

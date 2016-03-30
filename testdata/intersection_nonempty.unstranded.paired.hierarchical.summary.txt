@@ -1,0 +1,43 @@
+AnnotationFile	testdata/test.gtf
+Exon:
+	Unmerged	26
+	Merged	24
+	Genes	6
+	Chromosomes	1
+Intron:
+	Unmerged	11
+	Merged	11
+	Genes	3
+	Chromosomes	1
+Xine:
+	Unmerged	63
+	Merged	54
+	Genes	4
+	Chromosomes	1
+
+InputFile	testdata/PE.sam
+TotalReadPairs	57
+MissingMates	0
+TotalAssigned	15
+TotalAssignedFraction	26.3%
+
+AssignedExon	15
+AssignedExonFraction	26.3%
+AmbiguousExon	1
+
+AssignedIntron	0
+AssignedIntronFraction	0.0%
+AmbiguousIntron	0
+
+AssignedXine	0
+AssignedXineFraction	0.0%
+AmbiguousXine	0
+
+NoFeature	34
+MultiMapping	6
+Unmapped	1
+LowMAPQ	0
+TLENTooLong/TooShort	0
+Chimera	0
+Nonjunction	0
+Duplicate	0

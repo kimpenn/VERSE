@@ -1,0 +1,21 @@
+MACOS = -D MACOS 
+include makefile.version
+
+CCFLAGS = -mtune=core2 ${MACOS}  -O9 -Wall -D VERSE_VERSION=\"${VERSE_VERSION}\" -D_FILE_OFFSET_BITS=64
+LDFLAGS =  -pthread -lz -lm ${MACOS}
+CC = gcc ${CCFLAGS} ${STATIC_MAKE} -ggdb -fomit-frame-pointer -O3 -ffast-math -funroll-loops -mmmx -msse -msse2 -msse3 -fmessage-length=0   
+
+
+ALL_LIBS= HelperFunctions sambam-file hashtable input-files
+ALL_OBJECTS=$(addsuffix .o, ${ALL_LIBS})
+ALL_H=$(addsuffix .h, ${ALL_LIBS})
+ALL_C=$(addsuffix .c, ${ALL_LIBS})
+
+all: verse clean
+	mv verse ..
+
+verse: verse.c ${ALL_OBJECTS}
+	${CC} -o verse verse.c ${ALL_OBJECTS} ${LDFLAGS}
+
+clean:
+	rm -f ${ALL_OBJECTS}
